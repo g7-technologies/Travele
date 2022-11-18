@@ -30,6 +30,7 @@ export const AuthProvider = ({ children }) => {
             }
           },
 
+          
           signup: async (email, password) => {
             try {
               await auth().createUserWithEmailAndPassword(email, password);
